@@ -31,3 +31,11 @@ function number(a, b = 10) {
   return result;
 }
 // number(8);
+
+// function with rest parameter
+function collectThis(x, ...y) {
+  console.log(x);
+  console.log(y);
+}
+
+collectThis(1, 2, 3, 4, 5, 6, 7, 8);
