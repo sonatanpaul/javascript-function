@@ -10,3 +10,11 @@ const printMy = function () {
   console.log("printed");
 };
 // printMy();
+
+
+// function as a parameter and argument
+function printThis(param1, param2) {
+  console.log("Hello Word", param1, param2);
+}
+// printThis("Sonatan", "Paul");
+
