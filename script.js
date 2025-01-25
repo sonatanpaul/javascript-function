@@ -53,5 +53,25 @@ const arrowFun = (a, b) => {
   console.log(result);
   return result;
 };
-
 // arrowFun(10, 20);
+
+// callback function
+function foo(buz) {
+  console.log("hello world");
+  buz();
+}
+
+function buz() {
+  console.log("Hi, My name is Sonatan Paul");
+}
+// foo(buz);
+
+// alternative callback function
+function callback(callFunction) {
+  console.log("this is outer function");
+  callFunction();
+}
+
+callback(function () {
+  console.log("this is inner function");
+});
